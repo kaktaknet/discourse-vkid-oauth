@@ -1,0 +1,9 @@
+# encoding: utf-8
+
+en:
+  js:
+    login:
+      vkid:
+        name: "VK ID"
+        title: "with VK ID"
+        message: "Sign in with VK ID (secure OAuth 2.1)"

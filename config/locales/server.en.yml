@@ -1,0 +1,14 @@
+# encoding: utf-8
+
+en:
+  site_settings:
+    vkid_enabled: "Enable VK ID authentication"
+    vkid_client_id: "VK ID Application ID https://id.vk.com/about/business/go/"
+    vkid_client_secret: "VK ID Secret Key (Secure Key)"
+    vkid_scope: "VK ID OAuth scopes"
+
+  login:
+    vkid:
+      authenticator_error_no_email: "VK ID did not return an email address. Please ensure 'email' scope is granted in VK ID application settings."
+      authenticator_error_fetch_failed: "Failed to retrieve user data from VK ID. Please try again later."
+      authenticator_error_no_user_id: "VK ID did not return a user ID. Authentication cannot proceed."

@@ -1,0 +1,14 @@
+# encoding: utf-8
+
+ru:
+  site_settings:
+    vkid_enabled: "Включить авторизацию через VK ID"
+    vkid_client_id: "ID приложения VK ID https://id.vk.ru/about/business/go/"
+    vkid_client_secret: "Секретный ключ VK ID (Защищённый ключ)"
+    vkid_scope: "Разрешения VK ID OAuth"
+
+  login:
+    vkid:
+      authenticator_error_no_email: "VK ID не предоставил адрес электронной почты. Убедитесь, что разрешение 'email' указано в настройках приложения VK ID."
+      authenticator_error_fetch_failed: "Не удалось получить данные пользователя из VK ID. Пожалуйста, попробуйте позже."
+      authenticator_error_no_user_id: "VK ID не вернул идентификатор пользователя. Авторизация невозможна."

@@ -1,0 +1,139 @@
+// VK ID Widget Styles
+// Integrates VK ID OneTap widget into Discourse login modal
+
+.vkid-widget-container {
+  margin: 1em 0;
+  padding: 1em;
+  background: var(--primary-very-low);
+  border-radius: 8px;
+
+  // VK ID widget wrapper
+  #__vkidSdkRoot {
+    width: 100%;
+  }
+
+  // OneTap container
+  .VkIdWebSdk__container {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  // OAuth buttons styling
+  .VkIdWebSdk__button {
+    margin: 0.5em 0;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  // VK ID button (primary)
+  .VkIdWebSdk__button--vkid {
+    background: #0077ff;
+    color: white;
+
+    &:hover {
+      background: #0066dd;
+    }
+  }
+
+  // OK.ru button
+  .VkIdWebSdk__button--ok {
+    background: #ee8208;
+    color: white;
+
+    &:hover {
+      background: #dd7100;
+    }
+  }
+
+  // Mail.ru button
+  .VkIdWebSdk__button--mail {
+    background: #005ff9;
+    color: white;
+
+    &:hover {
+      background: #0050dd;
+    }
+  }
+
+  // Alternative login text
+  .VkIdWebSdk__alternativeLogin {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--primary-medium);
+  }
+}
+
+// Login modal adjustments
+.login-modal {
+  .login-buttons {
+    // Ensure VK ID widget appears first
+    #vkid-onetap-container {
+      order: -1;
+    }
+  }
+}
+
+// Mobile responsive
+@media screen and (max-width: 767px) {
+  .vkid-widget-container {
+    padding: 0.75em;
+
+    .VkIdWebSdk__container {
+      max-width: 100%;
+    }
+
+    .VkIdWebSdk__button {
+      font-size: 0.95em;
+      padding: 0.8em 1em;
+    }
+  }
+}
+
+// Dark theme support
+.theme-dark {
+  .vkid-widget-container {
+    background: var(--primary-very-low);
+  }
+}
+
+// Loading state
+.vkid-widget-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+
+  &::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--primary-low);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: vkid-spin 0.8s linear infinite;
+  }
+}
+
+@keyframes vkid-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Error state
+.vkid-widget-error {
+  padding: 1em;
+  background: var(--danger-low);
+  border-radius: 4px;
+  color: var(--danger);
+  text-align: center;
+  font-size: 0.9em;
+}

@@ -1,0 +1,9 @@
+# encoding: utf-8
+
+ru:
+  js:
+    login:
+      vkid:
+        name: "VK ID"
+        title: "через VK ID"
+        message: "Вход через VK ID (безопасный OAuth 2.1)"

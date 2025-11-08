@@ -1,0 +1,51 @@
+plugins:
+  vkid_enabled:
+    default: false
+    client: true
+    description: "Enable VK ID authentication (OAuth 2.1 with PKCE)"
+
+  vkid_client_id:
+    default: ""
+    description: "VK ID Application ID (from id.vk.ru)"
+    regex: "^[0-9]+$"
+
+  vkid_client_secret:
+    default: ""
+    secret: true
+    description: "VK ID Application Secret Key (Secure Key)"
+
+  vkid_scope:
+    default: "vkid.personal_info email phone"
+    description: "VK ID OAuth scopes"
+    type: enum
+    choices:
+      - vkid.personal_info
+      - vkid.personal_info email
+      - vkid.personal_info email phone
+      - vkid.personal_info phone
+
+  # VK ID Widget settings (modern frontend integration)
+  vkid_widget_enabled:
+    default: true
+    client: true
+    description: "Enable VK ID OneTap widget on login modal"
+
+  vkid_widget_providers:
+    default: "vkid,ok_ru,mail_ru"
+    client: true
+    description: "Enabled OAuth providers for widget (comma-separated: vkid, ok_ru, mail_ru)"
+
+  # Legacy settings (kept for backwards compatibility during migration)
+  # These are no longer used but prevent errors if old settings exist
+  vk_app_id:
+    default: ""
+    hidden: true
+
+  vk_secure_key:
+    default: ""
+    secret: true
+    hidden: true
+
+  vk_auth_enabled:
+    default: false
+    hidden: true
