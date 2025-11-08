@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-# name: discourse-vk-auth
+# name: discourse-vkid-oauth
 # about: VK ID (OAuth 2.1) authentication for Discourse
 # meta_topic_id: 12987
 # version: 2.0.0
 # authors: Discourse Team
-# url: https://github.com/discourse/discourse-vk-auth
+# url: https://github.com/kaktaknet/discourse-vkid-oauth
 # required_version: 2.7.0
 
 # CRITICAL: enabled_site_setting MUST be before any require statements
