@@ -4,7 +4,7 @@
 # about: VK ID (OAuth 2.1) authentication for Discourse
 # meta_topic_id: 12987
 # version: 2.0.0
-# authors: Discourse Team
+# authors: Discourse community
 # url: https://github.com/kaktaknet/discourse-vkid-oauth
 # required_version: 2.7.0
 
