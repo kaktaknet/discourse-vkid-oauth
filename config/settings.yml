@@ -24,17 +24,6 @@ plugins:
       - vkid.personal_info email phone
       - vkid.personal_info phone
 
-  # VK ID Widget settings (modern frontend integration)
-  vkid_widget_enabled:
-    default: true
-    client: true
-    description: "Enable VK ID OneTap widget on login modal"
-
-  vkid_widget_providers:
-    default: "vkid,ok_ru,mail_ru"
-    client: true
-    description: "Enabled OAuth providers for widget (comma-separated: vkid, ok_ru, mail_ru)"
-
   # Legacy settings (kept for backwards compatibility during migration)
   # These are no longer used but prevent errors if old settings exist
   vk_app_id:
