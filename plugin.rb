@@ -27,6 +27,3 @@ auth_provider(
 
 # Register VK icon for login button
 register_svg_icon "fab-vk" if respond_to?(:register_svg_icon)
-
-# Register VK ID widget assets
-register_asset "stylesheets/vkid-widget.scss"
