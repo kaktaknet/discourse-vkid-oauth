@@ -371,7 +371,7 @@ console.log(Discourse.SiteSettings.vkid_enabled); // true
 
 ## 🤝 Support
 
-- **Forum:** [Discourse Meta](https://meta.discourse.org/t/vk-com-login-vkontakte/12987)
+- **Forum:** [Discourse Meta](https://meta.discourse.org/t/388073/)
 - **Issues:** [GitHub Issues](https://github.com/kaktaknet/discourse-vk-auth/issues)
 - **VK ID Docs:** [Official Documentation](https://id.vk.ru/about/business/go/docs/en/vkid/latest/oauth-vk)
 - **VK ID DEMO:** [Official DEMO](https://id.vk.ru/about/business/go/demo)
